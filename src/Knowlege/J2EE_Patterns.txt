@@ -1,0 +1,84 @@
+J2EE (Java 2 Platform, Enterprise Edition) patterns, also known as J2EE design patterns, are design patterns 
+specifically tailored for enterprise-level applications using the J2EE platform. These patterns are focused on solving 
+common architectural problems in enterprise Java applications and ensuring best practices for building scalable, 
+reliable, and maintainable applications.
+
+Here’s an overview of some of the key J2EE design patterns:
+
+ 1. Business Tier Patterns:
+
+	1. Business Delegate Pattern: 
+		Provides a layer of abstraction between the presentation layer and business logic. It helps in minimizing the 
+		coupling between these layers and encapsulates the complexity of accessing business services.
+		  - Example: A `BusinessDelegate` class that handles all business logic calls and encapsulates the details of 
+		             remote service lookups and interactions.
+
+	2. Session Facade Pattern: 
+		Provides a simplified interface to a set of business methods, hiding the complexities of the underlying business
+		logic. It’s often used to reduce the number of business method calls made from the presentation layer.
+		  - Example: A `SessionFacade` class that aggregates multiple business operations into a single method call.
+
+	3. Service Locator Pattern: 
+		Encapsulates the logic required to locate and access various services (e.g., EJBs, JMS) in a single class. It 
+		abstracts the lookup mechanism and centralizes service access.
+		  - Example: A `ServiceLocator` class that retrieves and manages service instances.
+
+ 2. Presentation Tier Patterns:
+
+	1. Model-View-Controller (MVC) Pattern: 
+		Separates the presentation logic, user interface, and application logic. The Model represents the data, the View
+		displays the data, and the Controller handles user input and updates the Model.
+		  - Example: In a web application, JSP pages act as the View, Servlets or controllers manage the input and 
+		             logic, and JavaBeans represent the Model.
+
+	2. Front Controller Pattern: 
+		A design pattern used to provide a centralized request handling mechanism. It handles all incoming requests and 
+		delegates them to appropriate handlers or views.
+		  - Example: A single `FrontController` servlet that processes all requests and forwards them to appropriate 
+		             views or controllers.
+
+	3. Composite View Pattern: 
+		Combines multiple components or fragments into a single view, which can then be rendered as a complete page.  It
+		helps in reusing view components and managing complex views.
+		  - Example: Using JSP includes and tag libraries to assemble complex web pages.
+
+ 3. Integration Tier Patterns:
+
+	1. Data Access Object (DAO) Pattern: 
+		Separates data access logic from the business logic, providing a consistent interface for accessing and 
+		manipulating data from various sources (e.g., databases, XML files).
+		  - Example: A `UserDAO` class that provides methods to access and manipulate user data in a database.
+
+	2. Transfer Object (TO) Pattern: 
+		Used to transfer data between layers or processes, often in the form of a data structure or object. It reduces 
+		the number of method calls and improves performance.
+		  - Example: A `UserTO` class that encapsulates user data and is passed between the business layer and the 
+		             presentation layer.
+
+ 4. Enterprise Tier Patterns:
+
+	1. Value Object Pattern: 
+		Represents an immutable object that encapsulates a set of values. It is used to pass data between layers or 
+		processes in a consistent and efficient manner.
+		  - Example: A `Currency` class that represents a monetary value and provides methods for handling currency 
+		             operations.
+
+	2. Data Access Object (DAO) Pattern: 
+		Separates the data access logic from the business logic, providing a consistent interface for accessing data 
+		from different sources (e.g., relational databases, XML).
+		  - Example: A `UserDAO` class that provides methods to perform CRUD operations on user data.
+
+ 5. Additional Patterns and Practices:
+
+	1. Interception Pattern: 
+		Provides a mechanism to intercept and modify requests or responses. It’s often used for cross-cutting concerns 
+		like logging or security.
+		  - Example: Interceptors in a web application that handle logging, security checks, or transaction management.
+
+	2. Business Process Management (BPM) Patterns: 
+		Patterns related to defining and managing complex business processes or workflows within enterprise applications.
+		  - Example: Using BPM tools or workflows to model and automate business processes.
+
+J2EE patterns help address common challenges in enterprise application development, such as separation of concerns,  
+scalability, maintainability, and reusability. They are essential for designing robust and efficient enterprise-level 
+applications using the Java platform.

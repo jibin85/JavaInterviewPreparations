@@ -1,4 +1,4 @@
-package SummaryStatistics;
+package RevisableConcepts.SummaryStatistics;
 
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;

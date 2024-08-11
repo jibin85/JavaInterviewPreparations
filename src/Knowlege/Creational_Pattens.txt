@@ -1,0 +1,43 @@
+Creational design patterns are a category of design patterns focused on the process of object creation. They abstract the instantiation process to make it more flexible and decoupled from the specific classes that need to be instantiated. Creational patterns provide mechanisms for object creation that can be tailored to different situations, which helps in managing the complexities of object creation and ensures that the system remains scalable and maintainable.
+
+Here are the main creational design patterns:
+
+ 1. Singleton Pattern
+
+- Purpose: Ensures a class has only one instance and provides a global point of access to that instance.
+- Usage: Useful when exactly one object is needed to coordinate actions across the system (e.g., configuration managers, logging services).
+- Example: Database connection pools or configuration settings.
+
+ 2. Factory Method Pattern
+
+- Purpose: Defines an interface for creating objects, but allows subclasses to alter the type of objects that will be created. The client code relies on a factory method to create objects.
+- Usage: Useful when the exact type of object to be created is determined at runtime or varies depending on context.
+- Example: Creating different types of documents (e.g., PDF, Word) through a common interface.
+
+ 3. Abstract Factory Pattern
+
+- Purpose: Provides an interface for creating families of related or dependent objects without specifying their concrete classes. It allows for the creation of objects from different families, ensuring that the objects are compatible with each other.
+- Usage: Useful when the system needs to be independent of how its objects are created, composed, and represented, and when products are part of a family.
+- Example: Creating UI components that are consistent across different platforms (e.g., Windows, Mac) using a common interface.
+
+ 4. Builder Pattern
+
+- Purpose: Separates the construction of a complex object from its representation, allowing the same construction process to create different representations. It provides a way to construct an object step-by-step.
+- Usage: Useful when an object needs to be created with many optional components or when the construction process is complex.
+- Example: Building a complex `String` object with various formatting options or constructing a complex meal with various courses.
+
+ 5. Prototype Pattern
+
+- Purpose: Creates new objects by copying an existing object, known as the prototype. This is useful for creating objects that are similar to a given prototype but with slight variations.
+- Usage: Useful when the cost of creating a new instance of an object is more expensive than copying an existing instance, or when you need to create multiple instances of an object with the same configuration.
+- Example: Cloning objects for undo functionality or creating multiple instances of a configuration object with minor adjustments.
+
+ Summary
+
+- Singleton Pattern: Ensures a single instance of a class and provides global access.
+- Factory Method Pattern: Defines a method for creating objects but allows subclasses to decide which class to instantiate.
+- Abstract Factory Pattern: Creates families of related objects without specifying concrete classes.
+- Builder Pattern: Constructs complex objects step-by-step, allowing for various configurations.
+- Prototype Pattern: Copies existing objects to create new instances.
+
+Creational design patterns help manage object creation in a way that promotes flexibility, scalability, and maintainability, making it easier to manage complex systems and changing requirements.

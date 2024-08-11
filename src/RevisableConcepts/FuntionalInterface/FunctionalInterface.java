@@ -1,4 +1,4 @@
-package FuntionalInterface;
+package RevisableConcepts.FuntionalInterface;
 
 @java.lang.FunctionalInterface
 public interface FunctionalInterface {

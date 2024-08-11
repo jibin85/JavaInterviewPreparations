@@ -1,0 +1,85 @@
+Behavioral design patterns focus on how objects interact, communicate, and collaborate with each other. They help manage algorithms, responsibilities, and communications between objects to improve flexibility and reuse.
+
+Here are the main behavioral design patterns:
+
+ 1. Chain of Responsibility Pattern
+
+- Purpose: Allows a request to be passed along a chain of handlers. Each handler decides whether to process the request or pass it along to the next handler in the chain.
+- Usage: Useful for handling requests with multiple possible handlers or when you want to decouple request senders from handlers.
+- Example: Handling various types of user input (e.g., validation, logging, authentication) in a web application.
+
+ 2. Command Pattern
+
+- Purpose: Encapsulates a request as an object, allowing parameterization of clients with different requests, queuing of requests, and logging of requests. It separates the command from the object that executes it.
+- Usage: Useful for implementing undo/redo functionality, queuing operations, or decoupling senders and receivers of requests.
+- Example: A text editor where commands like "Bold," "Italic," and "Underline" are encapsulated as objects and can be executed, undone, or redone.
+
+ 3. Interpreter Pattern
+
+- Purpose: Provides a way to evaluate language grammar or expressions. It defines a grammar for a language and provides an interpreter to interpret sentences in the language.
+- Usage: Useful for designing languages or expressions that need to be evaluated or interpreted at runtime.
+- Example: SQL query parsers or expression evaluators.
+
+ 4. Iterator Pattern
+
+- Purpose: Provides a way to access elements of a collection sequentially without exposing its underlying representation. It defines an iterator object that encapsulates the iteration logic.
+- Usage: Useful for traversing collections and providing a uniform way to iterate over different types of collections.
+- Example: Java's `Iterator` interface used to traverse lists, sets, or maps.
+
+ 5. Mediator Pattern
+
+- Purpose: Defines an object that encapsulates how a set of objects interact. It promotes loose coupling by keeping objects from referring to each other explicitly and allows their interaction to be defined in a single place.
+- Usage: Useful for managing complex communications between objects or components in a system, reducing dependencies.
+- Example: A chat room where users (colleagues) communicate through a mediator (chat room) that handles message routing and delivery.
+
+ 6. Memento Pattern
+
+- Purpose: Captures and externalizes an object’s internal state so that the object can be restored to that state later. It provides a way to implement undo functionality.
+- Usage: Useful for saving and restoring the state of an object without exposing its internal structure.
+- Example: An undo mechanism in a text editor where the state of the document can be reverted to a previous version.
+
+ 7. Observer Pattern
+
+- Purpose: Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+- Usage: Useful for implementing distributed event handling systems where multiple objects need to react to changes in state.
+- Example: Implementing event listeners in a GUI application or a publish-subscribe system.
+
+ 8. State Pattern
+
+- Purpose: Allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+- Usage: Useful for managing state-dependent behavior and transitions between states.
+- Example: A state machine for handling different states in a process (e.g., vending machine, document workflow).
+
+ 9. Strategy Pattern
+
+- Purpose: Defines a family of algorithms, encapsulates each one, and makes them interchangeable. The algorithm can vary independently from clients that use it.
+- Usage: Useful for selecting and changing algorithms at runtime or for providing different variations of an algorithm.
+- Example: Different sorting algorithms that can be chosen based on performance or data characteristics.
+
+ 10. Template Method Pattern
+
+- Purpose: Defines the skeleton of an algorithm in a base class but lets subclasses override specific steps of the algorithm without changing its structure.
+- Usage: Useful for defining a common algorithm while allowing variations in some steps.
+- Example: A framework for generating reports where the overall report generation process is defined, but specific details are implemented by subclasses.
+
+ 11. Visitor Pattern
+
+- Purpose: Lets you define a new operation without changing the classes of the elements on which it operates. It separates algorithms from the objects on which they operate.
+- Usage: Useful when you need to perform operations on a set of objects with different types without modifying the objects.
+- Example: Adding new operations to a data structure (e.g., file system traversal) without altering the data structure's classes.
+
+ Summary
+
+- Chain of Responsibility Pattern: Passes a request along a chain of handlers, allowing multiple handlers to process it.
+- Command Pattern: Encapsulates requests as objects, allowing for parameterization, queuing, and undo/redo functionality.
+- Interpreter Pattern: Evaluates language grammar or expressions by defining a grammar and interpreter.
+- Iterator Pattern: Provides a way to traverse a collection without exposing its internal representation.
+- Mediator Pattern: Manages interactions between objects, promoting loose coupling and centralized communication.
+- Memento Pattern: Captures and restores an object’s state, supporting undo functionality.
+- Observer Pattern: Notifies dependents of changes in state, implementing a one-to-many dependency.
+- State Pattern: Allows an object to change behavior based on its internal state, appearing to change its class.
+- Strategy Pattern: Defines and encapsulates algorithms, allowing them to be interchangeable and selected at runtime.
+- Template Method Pattern: Defines the algorithm's skeleton in a base class, allowing subclasses to override specific steps.
+- Visitor Pattern: Adds operations to objects without changing their classes, separating algorithms from objects.
+
+These behavioral patterns help in managing object interactions and responsibilities, promoting flexibility, and improving the maintainability of the codebase.

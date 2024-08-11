@@ -1,4 +1,4 @@
-package FuntionalInterface;
+package RevisableConcepts.FuntionalInterface;
 
 public class FuncIntDemo {
     

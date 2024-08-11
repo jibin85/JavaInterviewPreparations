@@ -1,4 +1,4 @@
-package SalarySorting;
+package RevisableConcepts.SalarySorting;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

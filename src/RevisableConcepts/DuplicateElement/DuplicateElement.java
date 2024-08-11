@@ -1,4 +1,4 @@
-package DuplicateElement;
+package RevisableConcepts.DuplicateElement;
 
 import java.util.*;
 import java.util.function.Function;

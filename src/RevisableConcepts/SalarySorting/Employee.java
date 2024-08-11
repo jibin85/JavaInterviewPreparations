@@ -1,4 +1,4 @@
-package SalarySorting;
+package RevisableConcepts.SalarySorting;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
